@@ -1,0 +1,31 @@
+{
+  "name": "@profullstack/svgcrusher",
+  "version": "0.1.0",
+  "description": "The CLI and reusable SVG optimizer for svgcrusher.com",
+  "type": "module",
+  "license": "MIT",
+  "homepage": "https://svgcrusher.com",
+  "engines": {
+    "node": ">=20"
+  },
+  "exports": "./src/index.js",
+  "bin": {
+    "svgcrusher": "./bin/svgcrusher.js"
+  },
+  "files": [
+    "bin",
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node --test",
+    "check": "node --check src/index.js && node --check bin/svgcrusher.js"
+  },
+  "dependencies": {
+    "svgo": "4.1.0"
+  },
+  "devDependencies": {
+    "sharp": "^0.35.4"
+  }
+}
